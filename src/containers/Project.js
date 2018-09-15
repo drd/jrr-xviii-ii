@@ -6,7 +6,7 @@ import { Img } from '../components/image-loader'
 import '../styles/projects.css'
 
 
-export default withRouteData(({ project }) => (
+export let Project = ({ project }) => (
   <div className="page-content project-page">
     <div className="project">
       {/*<Link to="/projects/">{'<'} Back</Link>*/}
@@ -27,4 +27,6 @@ export default withRouteData(({ project }) => (
      }
     </div>
   </div>
-))
+)
+
+export default withRouteData(Project)
